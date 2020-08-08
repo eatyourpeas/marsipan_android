@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="risk_list" type="layout">@layout/activity_risk_assessment_twopane</item>
+</resources>

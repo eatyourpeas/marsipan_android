@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    tools:context=".Calculator$PlaceholderFragment"
+    android:id="@+id/relativeLayout">
+
+    <TextView
+        android:id="@+id/calculator_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/calculator_title"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/dobET"
+        android:hint="@string/dob_hint"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="@dimen/entry_box_top_padding" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/clinicET"
+        android:hint="@string/clinic_date_hint"
+        android:layout_below="@+id/dobET"
+        android:layout_alignLeft="@+id/dobET"
+        android:layout_alignStart="@+id/dobET" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/heightET"
+        android:hint="@string/height_hint"
+        android:layout_below="@id/clinicET"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/weightET"
+        android:hint="@string/weight_hint"
+        android:layout_below="@+id/heightET"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/weightET"
+        android:id="@+id/systolicBPET"
+        android:hint="@string/systolic_bp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/systolicBPET"
+        android:id="@+id/diastolicBPET"
+        android:hint="@string/diastolic_bp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sexSwitch"
+        android:showText="true"
+        android:textOn="@string/male_option"
+        android:textOff="@string/female_option"
+        android:layout_below="@+id/diastolicBPET"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_margin="25dp"
+        android:src="@drawable/ic_calculator"
+        android:id="@+id/calculateImageButton"
+        android:background="@drawable/oval_ripple_red"
+
+        android:stateListAnimator="@anim/button_elevation"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/calculate_button" />
+
+    <TextView
+        android:id="@+id/risktoollabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/risk_tool" />
+
+    <TextView
+        android:id="@+id/disclaimertextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sexSwitch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/disclaimer"
+        android:textSize="8sp" />
+
+
+</RelativeLayout>

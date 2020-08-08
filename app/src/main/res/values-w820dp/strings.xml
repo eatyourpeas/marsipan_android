@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dob_hint">date of birth</string>
+    <string name="clinic_date_hint">clinic date</string>
+    <string name="weight_hint">kg</string>
+    <string name="calculate_button_text">calculate</string>
+    <string name="male_option">male</string>
+    <string name="female_option">female</string>
+    <string name="calculate_button">calculate_image_button</string>
+    <string name="systolic_bp">systolic bp (mmHg)</string>
+    <string name="diastolic_bp">diastolic bp (mmHg)</string>
+</resources>

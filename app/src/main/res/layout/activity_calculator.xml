@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/container"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    tools:context=".Calculator" tools:ignore="MergeRootFrame" >
+<!--ImageButton
+    android:layout_width="56dp"
+    android:layout_height="56dp"
+    android:id="@+id/risktoolbutton"
+    android:layout_margin="25dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:src="@drawable/traffic_light"
+    android:background="@drawable/oval_ripple"
+    android:stateListAnimator="@anim/button_elevation" /-->
+
+<ImageButton
+    android:layout_width="56dp"
+    android:layout_height="56dp"
+    android:src="@drawable/traffic_light"
+    android:id="@+id/calculatorRiskImageButton"
+    android:layout_margin="25dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:background="@drawable/oval_ripple_red"
+    android:stateListAnimator="@anim/button_elevation"
+    android:contentDescription="@string/calculate_image_button" />
+
+</RelativeLayout>

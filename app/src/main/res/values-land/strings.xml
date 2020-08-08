@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="calculate_button">calculate_image_button</string>
+    <string name="systolic_bp">systolic bp (mmHg)</string>
+    <string name="diastolic_bp">diastolic bp (mmHg)</string>
+</resources>

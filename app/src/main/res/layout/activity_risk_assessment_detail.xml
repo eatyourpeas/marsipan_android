@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/riskdetailcontainer">
+        </FrameLayout>
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+            <ImageButton
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_margin="25dp"
+                android:id="@+id/opencalculatorbutton"
+                android:src="@drawable/ic_calculator"
+                android:background="@drawable/oval_ripple"
+                android:backgroundTint="@color/red"
+                android:stateListAnimator="@anim/button_elevation"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:contentDescription="calculate_image_button"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true">
+            <ImageButton
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_margin="25dp"
+                android:id="@+id/addRiskButton"
+                android:src="@drawable/abc_ic_ab_back_material"
+                android:background="@drawable/oval_ripple"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:stateListAnimator="@anim/button_elevation"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="calculate_image_button" />
+        </FrameLayout>
+
+</RelativeLayout>

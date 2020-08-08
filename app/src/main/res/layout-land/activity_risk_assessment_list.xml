@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <fragment class="eatyourpeas.co.uk.marsipan.RiskListFragment"
+
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+
+                android:layout_weight="1"
+                android:name="eatyourpeas.co.uk.marsipan.RiskListFragment"
+                android:id="@+id/risklistcontainer"
+                tools:context="eatyourpeas.co.uk.marsipan.RiskListFragment"
+                />
+
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_weight="1"
+                android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/riskdetailcontainer">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/risktext"/>
+            </FrameLayout>
+
+    </LinearLayout>
+    <ImageButton
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/opencalculatorbutton"
+        android:src="@drawable/ic_calculator"
+        android:background="@drawable/oval_ripple"
+        android:backgroundTint="@color/red"
+        android:stateListAnimator="@anim/button_elevation"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="calculate_image_button" />
+</RelativeLayout>

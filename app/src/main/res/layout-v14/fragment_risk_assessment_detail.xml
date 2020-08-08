@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/riskdetailcontainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ripple_material_dark"
+    >
+
+    <TextView
+        android:id="@+id/risktitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@color/primary_text_default_material_light"
+        android:textSize="@dimen/abc_text_size_medium_material" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="25dp"
+        android:id="@+id/radiocolourlinearlayout"
+        android:layout_below="@id/risktitle">
+
+        <RadioGroup
+            android:id="@+id/radiocolour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp">
+
+            <RadioButton
+                android:id="@+id/radiowhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/darker_gray"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radiored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/red"
+                android:checked="false" />
+
+            <RadioButton
+                android:id="@+id/radioamber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/orange"
+                android:checked="false" />
+
+            <RadioButton
+                android:id="@+id/radiogreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/green"
+                android:checked="false" />
+
+            <RadioButton
+                android:id="@+id/radioblue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayoutrisktext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/risktitle"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_toRightOf="@id/radiocolourlinearlayout"
+        android:background="@color/button_material_light"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/risktext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/secondary_text_default_material_light" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+    <!--
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:layout_centerHorizontal="true"
+        >
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+    </FrameLayout>
+
+    -->
+
+
+</RelativeLayout>
